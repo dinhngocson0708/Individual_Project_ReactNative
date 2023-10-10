@@ -39,10 +39,10 @@ const styles = StyleSheet.create({
     header: {
         justifyContent: 'space-between',
         alignItems: 'center',
-        paddingTop: 50,
-        padding: 20,
-        backgroundColor: 'white',
-        elevation: 3, // Thêm độ nâng độ cao cho hiệu ứng bay lên
+        paddingTop: 70,
+        padding:30,
+        
+       
     },
     topHeader: {
         flexDirection: 'row',
@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
         width: '65%',
         fontSize: 31,
         fontWeight: 'bold',
-        fontFamily: 'BentonSans Bold',
+        // fontFamily: 'BentonSans Bold',
         marginRight: 90
     },
     searchContainer: {

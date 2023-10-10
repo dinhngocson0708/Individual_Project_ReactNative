@@ -1,13 +1,13 @@
-// Màn hình Cart.js
+// Màn hình Payment.js
 import React from 'react';
 import { View, Text } from 'react-native';
 
-const Cart = () => {
+const Payment = () => {
   return (
     <View>
-      <Text>Giỏ hàng</Text>
+      <Text>Thanh toán</Text>
     </View>
   );
 }
 
-export default Cart;
+export default Payment;

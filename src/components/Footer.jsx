@@ -1,43 +1,57 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Cart from '../Page/Cart';
-import Payment from '../Page/Payment';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import Cart from '../Page/User';
+import Payment from '../Page/Cart';
+import Icon from 'react-native-vector-icons/Ionicons';
 import HomePage from '../Page/HomePage';
 
 const Tab = createBottomTabNavigator();
 
 const FooterTabs = () => {
   return (
-    <Tab.Navigator initialRouteName='Home'>
+    <Tab.Navigator initialRouteName=''>
       <Tab.Screen
         name="Home"
         component={HomePage}
         options={{
-          tabBarLabel: 'Trang chủ',
+          tabBarLabel: 'Home',
           tabBarIcon: ({ color, size }) => (
             <Icon name="home" color={color} size={size} />
           ),
+          headerShown: false,
         }}
       />
       <Tab.Screen
-        name="Cart"
+        name="User"
         component={Cart}
         options={{
-          tabBarLabel: 'Giỏ hàng',
+          tabBarLabel: '',
           tabBarIcon: ({ color, size }) => (
-            <Icon name="cart-shopping" color={color} size={size} />
+            <Icon name="person-outline" color={color} size={size} />
           ),
+         
+        }}
+      />
+       <Tab.Screen
+        name="Cart"
+        component={Payment}
+        options={{
+          tabBarLabel: '',
+          tabBarIcon: ({ color, size }) => (
+            <Icon name="cart-outline" color={color} size={size} />
+          ),
+        
         }}
       />
       <Tab.Screen
-        name="Payment"
+        name="Pay"
         component={Payment}
         options={{
-          tabBarLabel: 'Thanh toán',
+          tabBarLabel: '',
           tabBarIcon: ({ color, size }) => (
-            <Icon name="money-bill" color={color} size={size} />
+            <Icon name="chatbubble-ellipses-outline" color={color} size={size} />
           ),
+         
         }}
       />
     </Tab.Navigator>
