@@ -4,10 +4,12 @@ import Cart from '../Page/User';
 import Payment from '../Page/Cart';
 import Icon from 'react-native-vector-icons/Ionicons';
 import HomePage from '../Page/HomePage';
+import Explore_Restaurant from '../Page/Explore_Restaurant';
+import Chart from '../Page/Chart';
 
 const Tab = createBottomTabNavigator();
 
-const FooterTabs = () => {
+const FooterTab= () => {
   return (
     <Tab.Navigator initialRouteName=''>
       <Tab.Screen
@@ -16,7 +18,7 @@ const FooterTabs = () => {
         options={{
           tabBarLabel: 'Home',
           tabBarIcon: ({ color, size }) => (
-            <Icon name="home" color={color} size={size} />
+            <Icon name="home" color={'#6B50F6'} size={size} />
           ),
           headerShown: false,
         }}
@@ -27,7 +29,7 @@ const FooterTabs = () => {
         options={{
           tabBarLabel: '',
           tabBarIcon: ({ color, size }) => (
-            <Icon name="person-outline" color={color} size={size} />
+            <Icon name="person-outline" color={'#6B50F6'} size={size} />
           ),
          
         }}
@@ -38,24 +40,25 @@ const FooterTabs = () => {
         options={{
           tabBarLabel: '',
           tabBarIcon: ({ color, size }) => (
-            <Icon name="cart-outline" color={color} size={size} />
+            <Icon name="cart-outline" color={'#6B50F6'} size={size} />
           ),
         
         }}
       />
       <Tab.Screen
-        name="Pay"
-        component={Payment}
+        name="chart"
+        component={Chart}
         options={{
           tabBarLabel: '',
           tabBarIcon: ({ color, size }) => (
-            <Icon name="chatbubble-ellipses-outline" color={color} size={size} />
+            <Icon name="chatbubble-ellipses-outline" color={'#6B50F6'} size={size} />
           ),
          
         }}
       />
+      <Tab.Screen name="Explore" component={Explore_Restaurant}  />
     </Tab.Navigator>
   );
 }
 
-export default FooterTabs;
+export default FooterTab;

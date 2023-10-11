@@ -59,7 +59,7 @@ export default ExploreRestaurant = () => {
 const styles = StyleSheet.create({
     container: {
         // flex: 1,
-        padding: 30,
+        padding: 10,
         backgroundColor: "#FAFAFA",
         gap: 10,
         flexDirection: "row",
@@ -75,6 +75,5 @@ const styles = StyleSheet.create({
     },
     textName:{
         fontSize: 20,
-        
     }
 });

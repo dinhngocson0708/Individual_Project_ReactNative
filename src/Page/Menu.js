@@ -61,8 +61,8 @@ export default Menu = () => {
 }
 const styles = StyleSheet.create({
     container: {
-        padding: 30,
-        backgroundColor: "#F3F3F3",
+        padding: 10,
+        backgroundColor: "#FAFAFA",
         gap: 20,
         flexDirection: "row",
         flexWrap: "wrap",
@@ -70,10 +70,9 @@ const styles = StyleSheet.create({
     },
     card: {
         flexDirection: "row",
-        // gap: 10,
         alignItems: "center",
         backgroundColor: "#FFF",
-        padding: 30,
+        padding: 20,
         borderRadius: 22,
         width: '100%',
         justifyContent: 'space-between'

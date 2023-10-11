@@ -22,11 +22,11 @@ const Header = () => {
                         placeholderTextColor={'#6B50F6'}
                     // Xử lý sự kiện tìm kiếm ở đây
                     />
-                   
+
                 </View>
                 <TouchableOpacity style={styles.filterIcon}>
-                        <Icon name="sliders" size={20} color="#6B50F6" />
-                    </TouchableOpacity>
+                    <Icon name="sliders" size={20} color="#6B50F6" />
+                </TouchableOpacity>
             </View>
 
 
@@ -39,29 +39,28 @@ const styles = StyleSheet.create({
     header: {
         justifyContent: 'space-between',
         alignItems: 'center',
-        paddingTop: 70,
-        padding:30,
-        
-       
+        paddingTop: 60,
+        paddingLeft: 50,
+        paddingRight: 30,
     },
     topHeader: {
         flexDirection: 'row',
         justifyContent: 'space-between',
     }
     ,
-    bottomHeader:{
-        justifyContent:'space-between',
-        flexDirection:'row',
-        alignItems:'center',
-      
-        gap:10,
-        padding:10
+    bottomHeader: {
+        justifyContent: 'space-between',
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: 10,
+        padding: 10
     }
     ,
-    filterIcon:{
-        alignItems:'center',
-        padding:10,
-        borderRadius:5,
+    filterIcon: {
+        alignItems: 'center',
+        marginTop: 30,
+        padding: 15,
+        borderRadius: 10,
         backgroundColor: '#EDE7FA',
     },
     appName: {
@@ -76,6 +75,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         borderColor: 'gray',
         borderRadius: 5,
+        marginTop: 30,
         padding: 10,
         backgroundColor: '#EDE7FA',
 
@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
     searchInput: {
         flex: 1,
         paddingVertical: 0,
-        padding: 10
+        padding: 10,
     },
     searchIcon: {
         padding: 5,
